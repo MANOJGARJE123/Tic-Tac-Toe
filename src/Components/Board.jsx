@@ -1,4 +1,5 @@
-import  Square from "./Square";
+import Square from "./Square";
+import "./Board.css";
 function Board({squares, onPlay}) {
     return (
         <>
