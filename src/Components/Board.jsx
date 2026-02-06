@@ -22,9 +22,6 @@ function Board() {
     }
 
     const winner = calculateWinner(squares);
-    const status = winner ? `Winner: ${winner}` : `Next player: ${xIsNext ? "X" : "O"}`;
-
-    const winner = calculateWinner(squares);
     const isDraw = !winner && squares.every(Boolean);
     const status = winner
         ? `Winner: ${winner}`
