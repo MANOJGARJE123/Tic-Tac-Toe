@@ -1,15 +1,18 @@
 import {useState} from "react";
 
-function Square({value}) {
-    const[clikced , setClikced] = useState(false);
+function Square({}) {
+    const[value , setValue] = useState(null);
 
     function handleClick() {
-        setClikced(true);
+        setValue('X');
     }
     
     return (
         <button className="square" onClick={handleClick}>
-                    {value}
+            <div style={{color: value === 'X' ? 'red' : 'blue', alignItems: 'center', justifyContent: 'center'}}>
+                {value}
+            </div>
+                    
         </button>
     )
 }
