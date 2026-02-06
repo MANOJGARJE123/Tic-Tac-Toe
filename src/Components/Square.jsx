@@ -1,7 +1,7 @@
 import {useState} from "react";
 
 function Square({}) {
-    const[value , setValue] = useState(null);
+    const[value , setValue] = useState(Array(9).fill(null));
 
     function handleClick() {
         setValue('X');
@@ -12,7 +12,6 @@ function Square({}) {
             <div style={{color: value === 'X' ? 'red' : 'blue', alignItems: 'center', justifyContent: 'center'}}>
                 {value}
             </div>
-                    
         </button>
     )
 }
